@@ -162,7 +162,6 @@ function App() {
               {categories.map(category => <button key={category} className={filter === category ? "active" : ""} onClick={() => setFilter(category)}>{category}</button>)}
             </div>
             <div className="projects-grid">{visibleProjects.map(project => <ProjectCard key={project.title} project={project} />)}</div>
-            <p className="note">Project previews are screenshots of the live pages. Source links lead to my GitHub profile; individual repository links can be added when confirmed.</p>
           </div>
         </section>
 
@@ -187,7 +186,7 @@ function App() {
           </div>
         </section>
       </main>
-      <footer className="footer"><div className="wrap footer-inner"><a className="brand" href="#home"><span className="brand-icon">A</span> Ayinde<span className="blue">.</span></a><p>Built with React, CSS and curiosity.</p><a href="#home">Back to top ↑</a><small>© {new Date().getFullYear()} Ayinde Lateef Olalekan</small></div></footer>
+      <footer className="footer"><div className="wrap footer-inner"><a className="brand" href="#home"><span className="brand-icon">A</span> Ayinde<span className="blue">.</span></a><p>Built with React, and CSS.</p><a href="#home">Back to top ↑</a><small>© {new Date().getFullYear()} Ayinde Lateef Olalekan</small></div></footer>
     </>
   );
 }
